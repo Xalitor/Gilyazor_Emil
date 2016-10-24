@@ -1,0 +1,10 @@
+print("Hi, my name is RudeAI.")
+print("I'd like to ask you a few qestions.")
+human = input("What is your name? ")
+print(human, "?!!! Why would anyone name a baby that?")
+Year = int(input("How old are you?"))
+print("Ooooo!!! " , Year, "is getting up there.")
+num1 = input("What do you do for fun?")
+print("T throught only nerds like to", num1, "?")
+num2 = input("What kind of music to you like?")
+print
