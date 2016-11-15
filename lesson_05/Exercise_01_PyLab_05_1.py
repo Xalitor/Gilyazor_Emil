@@ -8,17 +8,15 @@ comp=input("What is your Computer Science's grade? ")
 
 def calcPoints():
     return((math+eng+physics+gym+art+history+comp)/7)
-    if grade=="a"
+    if grade=="a":
         return 4.0
-    elif grade
-        print("Your GPA is B")
-    elif grade
-        print("Your GPA is C")
-    elif grade
-        print("Your GPA is D")
-    else:
-        print("Your GPA is F")
+    if grade=="b":
+        return 3.0
+    if grade=="c":
+        return 2.0
+    if grade=="d":
+        return 1.0
+    if grade=="f":
+        return 0.0
 
-
-calcPoints()
-
+print("Your GPA is ", calcPoints(math) )
