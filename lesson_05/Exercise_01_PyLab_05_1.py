@@ -6,8 +6,7 @@ art=input("What is your Sculpture's grade? ")
 history=input("What is your history's grade? ")
 comp=input("What is your Computer Science's grade? ")
 
-def calcPoints():
-    return((math+eng+physics+gym+art+history+comp)/7)
+def calcPoints(grade):
     if grade=="a":
         return 4.0
     if grade=="b":
@@ -19,4 +18,4 @@ def calcPoints():
     if grade=="f":
         return 0.0
 
-print("Your GPA is ", calcPoints(math) )
+print("Your GPA is ", (calcPoints(math)+ calcPoints(eng)+ calcPoints(physics)+ calcPoints(gym)+calcPoints(art)+ calcPoints(history)+calcPoints(comp))/7 )
