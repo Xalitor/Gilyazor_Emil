@@ -8,7 +8,6 @@ weight=float(input("What is your weight in pounds?"))
 
 bmi=(weight/(height*height))*703
 
-
 def calcBMI(bmi):
     if bmi<18.5:
         print(" Condition is Underweight.")
@@ -22,4 +21,7 @@ def calcBMI(bmi):
         print("Condition is Very Obese")
     elif bmi>=40:
         print("Condition is Morbidly Obese")
-calcBMI()
+
+
+
+calcBMI(bmi)
