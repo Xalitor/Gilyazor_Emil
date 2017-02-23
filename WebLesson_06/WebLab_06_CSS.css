@@ -1,0 +1,17 @@
+h1 {
+	color: red;
+	font-family: arial;
+}
+p {
+	color: orange;
+	font-family: cursive;
+}
+ 
+
+a {
+	color: yellow;
+	border: 1px dashed purple;
+}
+body {
+	background-color: black;
+}
