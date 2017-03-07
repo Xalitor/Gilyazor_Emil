@@ -1,0 +1,58 @@
+* {
+	margin: 0px;
+	paddibg: 0px;
+}
+
+h1 {
+		font: bold 20px Tahoma;
+
+}
+h2 {
+	font: bold 14px Tahoma;
+}
+
+header {
+	display: block;
+}
+section{
+	display: block;
+}
+footer{
+	display: block;
+}
+aside{
+	display: block;
+}
+nav{
+	display: block;
+}
+article{
+	display: block;
+}
+hgroup{
+	display: block;
+}
+body {
+	text-aligh: center;
+}
+
+#bigWrapper {
+	border: 1px solid purple;
+	width: 1000px;
+	margin: 20px auto;
+	text-aligh: left;
+}
+#topHeader {
+	background: yellow;
+	border: 1px solid green;
+	padding: 20px;
+}
+
+#topMenu {
+	background: purple;
+	color: yellow;
+}
+
+#topMenu > li{
+	
+}
