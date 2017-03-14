@@ -53,9 +53,10 @@ body {
 
 #mainSection {
 	border: 1px solid blue;
-	-webkit-box-flex: 1;
 	margin: 20px;
 	padding: 20px;
+	-webkit-box-ordinal-group: 2;
+	-webkit-box-flex: 1000;
 }
 
 #sideNews {
@@ -64,6 +65,8 @@ body {
 	margin: 20px 0px;
 	padding: 30px;
 	background: purple;
+	-webkit-box-ordinal-group: 1;
+	-webkit-box-flex: 2;
 }
 
 #pageFooter: {
