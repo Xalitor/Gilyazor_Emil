@@ -1,0 +1,28 @@
+body {
+	text-align: center;
+}
+
+#box {
+	font-size: 30px;
+	border: 3px solid purple;
+	/*outline: 3px solid green;*/
+	display: block;
+	margin: 150px auto;
+	color: white;
+	/*background: -webkit-linear-gradient(135deg, black, white);*/
+	background: -webkit-radial-gradient(center, circle, red 15%, orange 40%);
+	width: 180px;
+	height: 80px;
+	-webkit-border-radius: 10px;
+	-webkit-box-shadow: rgb(110,110,110) 10px 8px 8px;
+	-webkit-transition: -webkit-transform 1s;
+	
+}
+
+#box > p {
+	text-shadow: black 1px 1px 3px;
+}
+
+#box:hover {
+	-webkit-transform: translate(-30px, -40px) rotate(180deg) scale(1.2);
+}
