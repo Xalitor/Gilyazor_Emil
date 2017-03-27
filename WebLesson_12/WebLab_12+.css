@@ -1,0 +1,22 @@
+body {
+	text-align: center;
+}
+#boss {
+	font-size: 40px;
+	border: 5px solid green;
+	display:block;
+	margin: 150px auto;
+	color: red;
+	width: 180px;
+	height: 150px;
+	background: -webkit-radial-gradient(center, circle, black 30%, blue 40%);
+	-webkit-box-shadow: rgb(110,110,110) 10px 8px 8px;
+	-webkit-transition: -webkit-transform 1s;
+	-webkit-border-radius: 55px;
+}
+#text {
+	text-shadow: white 1px 1px 3px;
+}
+#boss:hover {
+	-webkit-transform: translate(-30px, -40px) rotate(180deg) scale(1.2) matrix(-0.3) SkewX(30deg);
+}
