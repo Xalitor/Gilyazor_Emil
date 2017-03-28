@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+
+<form>
+	Height: <input type = "text" size = 5 maxLength = 15 id = "height" />
+	<br/>
+	<br/>
+	Width: <input type = "text" size = 5 maxLength = 15 id = "width" />
+	<br/>
+	<br/>
+	<input type = "button" value = "Calculate" onclick = "firstScript()"/>
+</form>
+<script type = "text/javascript">
+	function firstScript() {
+		var h = document.getElementById("height").value;
+		var w = document.getElementById("width").value;
+		document.write("Your BMI is... " + (703*w)/(h*h) + "m2");
+	}
+</script>
+</body>
+</html>
