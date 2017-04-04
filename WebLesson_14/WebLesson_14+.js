@@ -10,13 +10,27 @@ function validate() {
 		//there is no .com, .gov, or any other extension
 		//final dot is in the wrong place
 	
+	if(6 > y.length && (atPos < 1 || dotPos < atPos+2 || dotPos+2 > x.length)) {
+		alert("We were unable to process your request. Please correct the following errors...Both username and password are incorrect!");
+	}	
+	else {
 	
-	if(atPos < 1 || dotPos < atPos+2 || dotPos+2 > x.length)
-		alert("This is not a valid email address!");
-	else if(6 > y.length)
-		alert("Your password is so short!")
-	else if(6 > y.length || atPos < 1 || dotPos < atPos+2 || dotPos+2 > x.length)
-		alert("Both username and password are incorrect!")
-	else
-		alert("Success!")
+		if(atPos < 1 || dotPos < atPos+2 || dotPos+2 > x.length)
+			alert("We were unable to process your request. Please correct the following errors...This is not a valid email address!");
+		else if(6 > y.length)
+			alert("We were unable to process your request. Please correct the following errors...Your password is so short!");
+		
+		else
+			alert("Success!");
+	}
 }
+
+
+
+
+
+
+
+
+
+
