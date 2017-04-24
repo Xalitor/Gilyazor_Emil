@@ -1,6 +1,6 @@
 function drag() 
 {
-	mantis = document.getElementById("fish");
+	mantis = document.getElementById("shark");
 	leftbox = document.getElementById("leftBox")
 	
 	mantis.addEventListener("dragstart", startDrag, false);
@@ -14,20 +14,20 @@ function drag()
 }
 
 function startDrag(e) {
-	var pic = '<img id = "fish" src = "https://s-media-cache-ak0.pinimg.com/736x/25/7e/da/257edab7e8e88e0cfc56c78207b44054.jpg">';
+	var pic = '<img id = "shark" src = "https://s-media-cache-ak0.pinimg.com/736x/0d/e8/25/0de82521eed9d665827126e50f6a3949.jpg">';
 	e.dataTransfer.setData('Picture', pic);
 }
 
 function dragEnter(e) {
 	e.preventDefault();
-	leftbox.style.background = "#80657A";
-	leftbox.style.border = "3px solid green";
+	leftbox.style.background = "orange";
+	leftbox.style.border = "3px solid yellow";
 }
 
 function dragLeave(e) {
 	e.preventDefault();
-	leftbox.style.background = "white";
-	leftbox.style.border = "3px solid purple";
+	leftbox.style.background = "brown";
+	leftbox.style.border = "3px solid black";
 }
 
 function drop(e) {
