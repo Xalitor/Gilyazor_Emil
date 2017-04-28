@@ -1,0 +1,59 @@
+1 script
+
+using UnityEngine;
+
+[RequireComponent(typeof(Rigidbody))]
+public class PlayerMotor : MonoBehaviour {
+
+	private Rigidbody rb;
+
+	private Vector3 velocity = Vector3.zero;
+
+	void Start () {
+		rb = GetComponent <Rigidbody> ();
+	}
+
+	public void Move (Vector3 _velocity) {
+		velocity = _velocity;
+	}
+
+	void FixedUpdate () {
+		PerformMove ();
+	}
+
+	void PerformMove () {
+		if (velocity != Vector2.zero)
+			rb.MovePosition (rb.position + velocity * Time.fixedDeltaTime);
+	}
+	
+
+}
+
+2 Script
+
+using UnityEngine;
+
+[RequireComponent(typeof(PlayerMotor))]
+public class PlayerController : MonoBehaviour {
+
+	[SerializeField]
+	private float speed = 5f;
+
+	private PlayerMotor motor;
+
+	void Start () {
+		motor = GetComponent <PlayerMotor> ();
+	}
+
+	void Update () {
+		float xMov = Input.GetAxisRaw ("Horizontal");
+		float zMov = Input.GetAxisRaw ("Vertical");
+
+		Vector3 movHor = transform.right * xMov;
+		Vector3 movVer = transform.forward * zMov;
+
+		Vector3 velocity = (movHor + movVer).normalized * speed;
+
+		motor.Move (velocity);
+	}
+}
