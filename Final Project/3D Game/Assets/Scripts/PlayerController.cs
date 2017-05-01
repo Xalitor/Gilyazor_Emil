@@ -5,6 +5,8 @@ public class PlayerController : MonoBehaviour {
 
 	[SerializeField]
 	private float speed = 5f;
+	[SerializeField]
+	private float lookSpeed = 3f;
 
 	private PlayerMotor motor;
 
@@ -22,5 +24,10 @@ public class PlayerController : MonoBehaviour {
 		Vector3 velocity = (movHor + movVer).normalized * speed;
 
 		motor.Move (velocity);
+
+		float yRot = Input.GetAxisRaw ("Mouse X");
+		Vector3 rotation = new Vector3 (0f, yRot, 0f) * lookSpeed;
+
+		motor.Rotate (rotation);
 	}
 }
